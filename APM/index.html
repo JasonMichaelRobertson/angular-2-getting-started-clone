@@ -14,17 +14,17 @@
     
     <script src="node_modules/zone.js/dist/zone.js"></script>
     <script src="node_modules/reflect-metadata/Reflect.js"></script>
-    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script> <!-- system js is the module loader -->
 
     <!-- Configure SystemJS -->
-    <script src="systemjs.config.js"></script>
+    <script src="systemjs.config.js"></script> <!-- how does the Module loader find root Application Coponent AppComponent - defines the main entry point -->
     <script>
-      System.import('app').catch(function(err){ console.error(err); });
+      System.import('app').catch(function(err){ console.error(err); }); // this is the start of the application it loads app our component
     </script>
 </head>
 
 <body>
-    <pm-app></pm-app>
+    <pm-app>Loading App ...</pm-app> <!--pm-app directive to load template -->
     Starter files for the course Jason's sourcy Angula 2 App
 </body>
 
