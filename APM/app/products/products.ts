@@ -9,5 +9,4 @@
     imageUrl: string;
 }
 
-
 // add class methods

@@ -1,21 +1,22 @@
-﻿import { Component } from '@angular/core';
+﻿import { Component, OnInit } from '@angular/core';
 import { IProduct } from './products';
 
 // component decorator
 @Component({
-    selector: 'pm-products', 
-    templateUrl : './app/products/product-list.component.html' // relative to index.html file 
+    selector: 'pm-products',
+    templateUrl: './app/products/product-list.component.html', // relative to index.html file 
+    styleUrls: ['./app/products/product-list.component.css']
 })
 
 // class
-export class ProductListComponent {
+export class ProductListComponent implements OnInit {
     pageTitle: string = 'JRs Product List';
     imageWidth: number = 50;
     imageMargin: number = 2;
     showImage: boolean = false;
     listFilter: string = 'cart';
     message: string;
-    
+   
     products: IProduct[] = [
         {
             "productId": 1,
@@ -76,5 +77,11 @@ export class ProductListComponent {
 
     onRatingClicked(message: string): void {
         this.message = message;
+    }
+
+    ngOnInit(): void {
+        console.log('In OnInit');
+
+        s
     }
 }
