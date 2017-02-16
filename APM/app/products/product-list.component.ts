@@ -4,8 +4,9 @@ import { IProduct } from './products';
 // component decorator
 @Component({
     selector: 'pm-products',
-    templateUrl: './app/products/product-list.component.html', // relative to index.html file 
-    styleUrls: ['./app/products/product-list.component.css']
+    moduleId: module.id,
+    templateUrl: 'product-list.component.html', // template view 
+    styleUrls: ['product-list.component.css']  // template style
 })
 
 // class
@@ -80,8 +81,6 @@ export class ProductListComponent implements OnInit {
     }
 
     ngOnInit(): void {
-        console.log('In OnInit');
-
-        s
+        console.log('In OnInit');        
     }
 }
