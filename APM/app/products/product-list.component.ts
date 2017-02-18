@@ -74,13 +74,13 @@ export class ProductListComponent implements OnInit {
     // method listens to Event
     toggleImage(): void {
         this.showImage = !this.showImage;
-    }
-
-    onRatingClicked(message: string): void {
-        this.message = message;
-    }
+    }    
 
     ngOnInit(): void {
         console.log('In OnInit');        
+    }
+
+    onRatingClicked(message: string): void {
+        this.pageTitle = 'Product List: ' + message;
     }
 }
