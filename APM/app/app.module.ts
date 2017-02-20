@@ -6,6 +6,7 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent }  from './app.component'; // root bootstrap component
 
+import { WelcomeComponent } from './home/welcome.component';
 import { ProductListComponent } from './products/product-list.component';
 import { ProductFilterPipe } from './products/product-filter.pipe';
 import { StarComponent } from './shared/star.component';
