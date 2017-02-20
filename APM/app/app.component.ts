@@ -1,6 +1,6 @@
 
 // this imports the component function from Angular Core
-import {Component} from '@angular/core'; 
+import {Component, OnInit} from '@angular/core'; 
 
 import {ProductService} from './products/product.service';
 
@@ -14,5 +14,11 @@ import {ProductService} from './products/product.service';
 
 // creates the class export makes it public
 export class AppComponent {
-    pageTitle:string = 'Jasons Angular 2 Website Web App'
+    pageTitle: string = 'ComSys.Co Angular 2 Website - Jason Robertson'
+    currentYear: string;
+
+
+    ngOnInit(): void {
+        this.currentYear = new Date().getFullYear().toString();
+    }
 }
