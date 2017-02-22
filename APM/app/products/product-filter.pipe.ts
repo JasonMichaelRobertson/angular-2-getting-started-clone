@@ -1,5 +1,5 @@
 ﻿import { PipeTransform, Pipe } from '@angular/core';
-import { IProduct } from './products';
+import { IProduct } from './product';
 
 // Pipe decorator
 @Pipe({

@@ -1,7 +1,7 @@
 ﻿import { Component, OnInit } from '@angular/core'; // OnInit Life Cycle hook
 import { ActivatedRoute, Router } from '@angular/router'; // read parameters or url route
 
-import { IProduct } from './products';
+import { IProduct } from './product';
 
 
 @Component({  

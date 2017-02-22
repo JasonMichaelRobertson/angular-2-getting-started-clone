@@ -5,7 +5,7 @@ import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/operator/do';
 
-import { IProduct } from './products';
+import { IProduct } from './product';
 
 @Injectable()
 export class ProductService {    
@@ -19,6 +19,11 @@ export class ProductService {
             .map((response: Response) => <IProduct[]> response.json())
             .do(data => console.log('All: ' + JSON.stringify(data)))
             .catch(this.handleError);
+    }
+
+    getProduct(id: number): Observable<IProduct> {
+        return this.getProducts()
+            .map((products: IProduct[]) => products.find(p => p.productId === id));
     }
 
     private handleError(error: Response) {
