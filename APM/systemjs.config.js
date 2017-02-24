@@ -1,11 +1,12 @@
 /**
  * System configuration for Angular 2 samples
  * Adjust as necessary for your application needs.
+ * ES Module loader automatically loads files for our application dont have to add script tags for every file
  */
 (function (global) {
   System.config({
     paths: {
-      // paths serve as alias
+      // paths serve as alias where to find to load files
       'npm:': 'node_modules/'
     },
     // map tells the System loader where to look for things

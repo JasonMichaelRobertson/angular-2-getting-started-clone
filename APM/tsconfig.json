@@ -1,13 +1,22 @@
+// Type script config file tsc type script compiler reads this
 {
   "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
+    "target": "es5", // transpile typescript code to es5 compatible code
+    "module": "commonjs", //
     "moduleResolution": "node",
-    "sourceMap": true,
-    "emitDecoratorMetadata": true,
+    "sourceMap": true, // should generate map files used for debugging
+    "emitDecoratorMetadata": true, // required for Angular to compile support for decorators
     "experimentalDecorators": true,
     "removeComments": false,
-    "noImplicitAny": true,
+    "noImplicitAny": true, // no implicit any default untyped variables to any
     "suppressImplicitAnyIndexErrors": true
   }
 }
+
+// this file to know how to compile
+
+// Some javascript libraries and compileres extend JavaScript with features and syntax that typescript compiler does not understand
+// we can use typescrpt definition files d.ts files to tell the typscript compiler about the libraries we load (included with npm packages)
+// see the index.d.ts file in app root in typings dir
+
+// npm package file package.json - npm install aangular files and dependencies and runs scripts

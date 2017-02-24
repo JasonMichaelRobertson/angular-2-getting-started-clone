@@ -1,7 +1,7 @@
 {
     "name": "product-management",
-    "version": "1.0.0",
-    "author": "Deborah Kurata",
+    "version": "1.1.0",
+    "author": "Jason Robertson ComSys.Co",
     "description": "Package for the Acme Product Management sample application",
     "scripts": {
         "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
