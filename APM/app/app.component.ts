@@ -2,7 +2,7 @@
 // this imports the component function from Angular Core
 import {Component, OnInit} from '@angular/core'; 
 
-import {ProductService} from './products/product.service';
+// import {ProductService} from './products/product.service'; could leave this here if it was common to other components
 
 // selector pm for priduct management - App name of the component any valid html can be used in the template
 @Component({    
@@ -20,8 +20,8 @@ import {ProductService} from './products/product.service';
         <div class='container'>
             <router-outlet></router-outlet>
         </div>
-    </div>`,
-    providers: [ProductService] // Register Provider Service in app.component the root app component available to all components, component metadata
+    </div>`
+  //  providers: [ProductService] // Register Provider Service in app.component the root app component available to all components, component metadata - could leave here
 })
 
 // creates the class export makes it public
